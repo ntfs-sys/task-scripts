@@ -7,6 +7,7 @@ let browser: Browser;
 beforeAll(async () => {
     browser = await puppeteer.launch({
         args: ['--no-sandbox'],
+        executablePath: '/usr/sbin/helium-browser',
     });
 });
 
